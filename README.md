@@ -1,0 +1,1 @@
+Basic project that consists in creating a non-scientific calculator.
