@@ -22,7 +22,6 @@ function operator (arg) {
     let myRegExp = /.?\d+/;
     let matchedLeft = arg.match(myRegExp);
     let arg2 = arg.replace(matchedLeft,"");
-    console.log(arg2);
     let myRegexpOperator = /\+|\-|\*|\//;
     let matchedOperator = arg2.match(myRegexpOperator);
     let matchedRight = arg2.replace(matchedOperator,"");    
