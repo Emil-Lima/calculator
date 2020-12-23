@@ -9,11 +9,17 @@ body {
     align-items: center;
 }
 
+#bothScreens {
+    background-color: white;
+}
+
+#smallerScreen {
+    height: 15px;
+}
+
 #screen {
     margin-top: 1%;
     margin-bottom: 2px;
-    border: solid black 3px;
-    background-color: white;
     width: 300px;
     height: 20px;
     text-align: right;
@@ -29,4 +35,16 @@ body {
 
 button {
     cursor: pointer;
+    height: calc(300px/4);
+    width: calc(300px/4);
+}
+
+#enter {
+    grid-column-start: span 2;
+    width: calc(300px/2);
+}
+
+#erase {
+    grid-column-start: span 2;
+    width: calc(300px/2);
 }
