@@ -49,6 +49,7 @@ buttons.forEach(element => {
             if (!(/.?\d+(\/|\*|\-|\+).?\d+/).test(document.getElementById("screen").textContent)) {
                 document.getElementById("screen").textContent = document.getElementById("screen").textContent;
             } else {
+                document.getElementById("smallerScreen").textContent = document.getElementById("screen").textContent;
                 return operator(String(document.getElementById("screen").textContent));
             }
         })
