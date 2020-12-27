@@ -19,7 +19,7 @@ function divide (n1,n2) {
 }
 
 function operator (arg) {
-    let myRegExp = /.?\d+/;
+    let myRegExp = /.?.?\d+/;
     let matchedLeft = arg.match(myRegExp);
     let arg2 = arg.replace(matchedLeft,"");
     let myRegexpOperator = /\+|\-|\*|\//;
