@@ -19,8 +19,9 @@ function divide (n1,n2) {
 }
 
 function operator (arg) {
-    let myRegExp = /.?.?\d+/;
+    let myRegExp = /-?\d+\.?\d*/;
     let matchedLeft = arg.match(myRegExp);
+    console.log(matchedLeft);
     let arg2 = arg.replace(matchedLeft,"");
     let myRegexpOperator = /\+|\-|\*|\//;
     let matchedOperator = arg2.match(myRegexpOperator);
@@ -47,7 +48,7 @@ buttons.forEach(element => {
     } else if (element.textContent === "enter") {
         element.addEventListener("click",() => {
             if (!(/.?\d+(\/|\*|\-|\+).?\d+/).test(document.getElementById("screen").textContent)) {
-                document.getElementById("screen").textContent = document.getElementById("screen").textContent;
+                
             } else {
                 document.getElementById("smallerScreen").textContent = document.getElementById("screen").textContent;
                 return operator(String(document.getElementById("screen").textContent));
@@ -65,5 +66,3 @@ buttons.forEach(element => {
         });
     }
 });
-
-
