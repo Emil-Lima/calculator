@@ -1,5 +1,7 @@
 body {
     background-color: #B0FBF2;
+    background-image: url("resources/background.jpg");
+    background-size: cover;
 }
 
 #mainContainer {
@@ -11,8 +13,8 @@ body {
 }
 
 #bothScreens {
-    background-color: #B0B9FB;
-    border: 10px solid #FBF2B0;
+    background-color: #dddff0;
+    border: 10px solid #0C4FE6;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     box-shadow: 5px;
@@ -41,7 +43,7 @@ body {
     grid-template-rows: repeat(5,1fr);
     grid-template-columns: repeat(4,1fr);
     width: 300px;
-    border: 10px solid #FBF2B0;;
+    border: 10px solid #0C4FE6;;
     background-color: black;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -51,7 +53,7 @@ button {
     cursor: pointer;
     height: calc(300px/4);
     width: calc(300px/4);
-    background-color: #F2B0FB;
+    background-color: #E6A30C;
     border-color: black;
     border-radius: 2px;
     font-family: 'Ubuntu', sans-serif;
